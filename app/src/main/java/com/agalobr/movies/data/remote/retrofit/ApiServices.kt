@@ -5,9 +5,9 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface ApiServices {
-    @GET("all.json")
+    @GET("/movies")
     fun getAllMovies(): Call<List<MoviesApiModels>>
 
-    @GET("id/{movieId}.json")
-    fun getMovieById(@Path("movieId") heroId: String): Call<MoviesApiModels>
+    @GET("/movies/{movieId}")
+    fun getMovieById(@Path("movieId") movieId: String): Call<MoviesApiModels>
 }

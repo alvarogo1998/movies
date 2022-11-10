@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiClient {
 
-    private val baseEndPoint = "https://movies-and-shows-api.cyclic.app/movies/"
+    private val baseEndPoint = "https://movies-and-shows-api.cyclic.app/"
 
     private val apiServices: ApiServices
 
